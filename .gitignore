@@ -1,0 +1,18 @@
+# Python 
+__pycache__/ 
+*.pyc 
+.venv/ 
+venv/ 
+.env 
+.spyproject/ 
+.vscode/ 
+.idea/ 
+data/raw/*.dta 
+data/raw/*.zip 
+data/interim/ 
+data/processed/ 
+.ipynb_checkpoints/ 
+reports/figures/*.png 
+reports/figures/*.pdf 
+.DS_Store 
+Thumbs.db 
