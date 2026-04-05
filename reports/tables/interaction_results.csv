@@ -1,0 +1,10 @@
+Interaction,Odds_Ratio,P_Value
+C(education_level_cat)[T.primary]:C(survey_year_cat)[T.2005],1.3840508019645297,0.0001469723019616342
+C(education_level_cat)[T.secondary]:C(survey_year_cat)[T.2005],1.038131409541143,0.7079211751928074
+C(education_level_cat)[T.higher]:C(survey_year_cat)[T.2005],1.6293930389983324,0.1133635212843322
+C(education_level_cat)[T.primary]:C(survey_year_cat)[T.2011],1.169121754829543,0.034844603151325634
+C(education_level_cat)[T.secondary]:C(survey_year_cat)[T.2011],1.058725887237645,0.6073654243185496
+C(education_level_cat)[T.higher]:C(survey_year_cat)[T.2011],1.4162085091933931,0.2135503175000154
+C(education_level_cat)[T.primary]:C(survey_year_cat)[T.2016],1.154597118252858,0.05564087620098402
+C(education_level_cat)[T.secondary]:C(survey_year_cat)[T.2016],1.123817279100956,0.24044522142769498
+C(education_level_cat)[T.higher]:C(survey_year_cat)[T.2016],1.5366678158089888,0.1130590473521525
