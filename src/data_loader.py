@@ -1,8 +1,8 @@
 """
 data_loader.py
 Reusable module for loading DHS .DTA files
-Author: Your Name
-Date: 2024
+Author: Berket Andualem
+Date: 2026
 """
 
 import pandas as pd
