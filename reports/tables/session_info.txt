@@ -1,0 +1,7 @@
+Python version: 3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]
+Pandas version: 2.3.3
+NumPy version: 2.4.0
+Matplotlib version: 3.10.8
+Seaborn version: 0.13.2
+Statsmodels version: 0.14.6
+SciPy version: 1.16.3
