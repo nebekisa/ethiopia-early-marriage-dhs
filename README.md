@@ -1,70 +1,197 @@
-# Determinants and Consequences of Early Marriage in Ethiopia 
- 
-Using Demographic and Health Survey (DHS) Data 2000-2016 
- 
-## Project Status: In Progress 
- 
-## Research Questions 
-1. What are the key determinants of early marriage in Ethiopia? 
-2. What are the consequences of early marriage on reproductive health, education, and empowerment? 
-3. How have trends changed from 2000 to 2016? 
- 
-## Repository Structure 
- 
-``` 
-data/raw/ - Original DHS datasets 
-data/processed/ - Cleaned and merged datasets 
-notebooks/ - Jupyter notebooks for analysis 
-src/ - Reusable Python modules 
-reports/ - Figures, tables, and final paper 
-``` 
-# Determinants and Consequences of Early Marriage in Ethiopia: 
-# A Pooled Analysis of DHS Data 2000-2016
+# Determinants and Consequences of Early Marriage in Ethiopia
 
-## Abstract
-**Background:** Early marriage remains prevalent in Ethiopia...
-**Methods:** Pooled analysis of 61,635 women from four DHS surveys...
-**Results:** Early marriage declined from 70.3% to 60.6%... Higher education reduced odds by 84%...
-**Conclusions:** Investment in girls' secondary education is the most effective intervention...
+### Evidence from DHS Data (2000–2016)
 
-## 1. Introduction
-- 12 million girls married before 18 annually worldwide
-- Ethiopia: 40% of girls married before 18 (UNICEF)
-- Gap: Limited pooled analysis across multiple DHS rounds
+---
 
-## 2. Methods
-### 2.1 Data Source
-- DHS Ethiopia 2000, 2005, 2011, 2016
-- 61,635 women aged 15-49
+## 📌 Overview
 
-### 2.2 Variables
-- Outcome: Early marriage (<18 years)
-- Predictors: Education, wealth, residence, region, year
+This project provides a data-driven analysis of early marriage in Ethiopia using nationally representative Demographic and Health Survey (DHS) data from four survey rounds: **2000, 2005, 2011, and 2016**.
 
-### 2.3 Statistical Analysis
-- Logistic regression (adjusted odds ratios)
-- Poisson regression (fertility consequences)
-- Sensitivity analysis
+The study investigates:
 
-## 3. Results
-### 3.1 Descriptive Statistics
-[Your summary statistics table]
+* Trends in early marriage over time
+* Socioeconomic and demographic determinants
+* Consequences on fertility, education, and employment
 
-### 3.2 Determinants of Early Marriage
-[Your logistic regression results]
+This repository is designed as a **reproducible data science and research project**, following professional standards in data analysis and research reporting.
 
-### 3.3 Fertility Consequences
-[Poisson regression results]
+---
 
-### 3.4 Temporal Trends
-[Interaction analysis]
+## 🎯 Research Objectives
 
-## 4. Discussion
-### 4.1 Summary of Findings
-### 4.2 Comparison with Literature
-### 4.3 Policy Implications
-### 4.4 Strengths and Limitations
+1. Analyze temporal trends in early marriage prevalence
+2. Identify key determinants (education, wealth, region, residence, etc.)
+3. Examine consequences on:
 
-## 5. Conclusion
+   * Fertility
+   * Educational attainment
+   * Employment status
+4. Provide evidence-based insights for policy and research
 
-## 6. References
+---
+
+## 📊 Data Source
+
+Data comes from the **Ethiopia Demographic and Health Surveys (EDHS)**:
+
+* 2000 EDHS (ETIR41FL)
+* 2005 EDHS (ETIR51FL)
+* 2011 EDHS (ETIR61FL)
+* 2016 EDHS (ETIR71FL)
+
+> Access requires registration at the DHS Program website.
+
+---
+
+## 🧠 Key Variable
+
+**Early Marriage (Target Variable)**
+
+* Defined as: marriage before age 18
+* Constructed from DHS variable `v511` (age at first marriage)
+
+---
+
+## 📁 Project Structure
+
+```
+ethiopia-early-marriage-dhs/
+│
+├── data/
+│   ├── raw/                  # Original DHS datasets (not included)
+│   └── processed/            # Cleaned and merged dataset
+│
+── notebooks/
+│   ├── 01_data_loading.ipynb
+│   ├── 02_data_cleaning.ipynb
+│   ├── 03_exploratory_analysis.ipynb
+│   ├── 04_feature_engineering.ipynb
+│   ├── 05_comprehensive_analysis.ipynb    # ← MAIN ANALYSIS
+│   └── 06_advanced_analysis.ipynb         # ← ADVANCED METHODS
+│
+├── src/
+│   ├── config.py
+│   ├── data_loader.py
+│   └── data_cleaner.py
+    └── model.py
+    └──visualization.py
+    └──wealth_proxy.py
+│   └── feature_engineering.py
+│
+├── reports/
+│   ├── figures/              # Visualizations (PNG)
+│   ├── tables/               # Statistical tables
+│   └── research_paper.pdf
+│
+├── requirements.txt
+└── README.md
+```
+
+---
+
+## ⚙️ Methodology
+
+### 1. Data Processing
+
+* Merged DHS datasets across survey years
+* Selected relevant variables
+* Handled missing values
+* Created derived features (education, wealth, media exposure, empowerment)
+
+### 2. Exploratory Data Analysis (EDA)
+
+* Trend analysis over time
+* Group comparisons (education, wealth, region, residence)
+* Distribution analysis
+* Correlation analysis
+
+### 3. Statistical Analysis
+
+* Logistic regression (determinants of early marriage)
+* Poisson regression (fertility outcomes)
+* Linear regression (education outcomes)
+
+---
+
+## 📈 Outputs
+
+All outputs are generated from the notebooks and saved in:
+
+* `reports/figures/` → visualizations
+* `reports/tables/` → statistical tables
+
+Examples include:
+
+* Trend of early marriage over time
+* Early marriage by education and wealth
+* Regional disparities
+* Regression results
+
+---
+
+## 🚀 How to Run
+
+### 1. Clone Repository
+
+```bash
+git clone https://github.com/nebekisa/ethiopia-early-marriage-dhs.git
+cd ethiopia-early-marriage-dhs
+```
+
+### 2. Setup Environment
+
+```bash
+python -m venv venv
+venv\Scripts\activate   # Windows
+pip install -r requirements.txt
+```
+
+### 3. Run Analysis
+
+```bash
+jupyter notebook
+```
+
+Run notebooks in order:
+1 → 2 → 3 → 4 → 5
+
+---
+
+## 📌 Notes
+
+* DHS data is not included due to licensing restrictions
+* Users must download data from the DHS Program
+* Results depend on correct data access and preprocessing
+
+---
+
+## 📄 Research Output
+
+The final research paper is available in:
+
+```
+reports/research_paper.pdf
+```
+
+---
+
+## 📚 Citation (Draft)
+
+```
+Author. (2026). Determinants and Consequences of Early Marriage in Ethiopia: 
+Evidence from DHS Data (2000–2016).
+```
+
+---
+
+## 📬 Contact
+
+For questions or collaboration:
+
+* GitHub Issues
+* Email: libekiger@gmail.com
+
+---
+
+
